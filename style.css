@@ -1,0 +1,51 @@
+body {height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.butn{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--body-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    height: 100px;  
+    width: 700px;
+    margin-block: auto;
+    border-style: dotted;
+    color: #ffffff;
+}
+
+
+
+
+.butn:hover{
+    --k: 0;
+    place-self: center;
+    background: linear-gradient(90deg, hsl(calc(var(--k)*1turn), 95%, 65%), 
+    hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font: 900 clamp(0.875em, 7.25vw, 5em) arial black, sans-serif;
+    filter: url(#f);
+    text-align: center;
+    text-transform: uppercase;
+    animation: k 10s linear infinite;
+    font-size: small;
+}
+
+.butn {
+     
+    border-color: #74d879;
+    color: #d1cece;
+}
